@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+    :root{
+        --cor1:#FFAB93;
+        --cor2:#D87558;
+        --cor3:#BC5031;
+        --cor4:#973417;
+        --cor5:#6c1800;
+    }
+    a{
+        text-decoration: none;
+        color: var(--cor1);
+    }
+    strong{
+        color: #471406;
+    }
+    body{
+        background-color: var(--cor1);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-image: linear-gradient(to top, var(--cor4), var(--cor2));
+        padding: 10px;
+        margin: 0;
+        color: white;
+        text-align: center;
+    }
+    nav{
+        background-color: var(--cor4);
+        padding: 10px;
+        box-shadow: 0 2px 6px var(--cor4);
+    }
+    nav a{
+        color: white;
+        padding: 10px;
+        transition: 0.3s;
+    }
+    nav a:hover{
+        background-color: var(--cor1);
+        padding: 10px;
+        color: var(--cor5);
+    }
+    main{
+        background-color: white;
+        max-width: 1200px;
+        padding: 20px; 
+        margin: auto auto -20px auto;
+    }
+    article > h2{
+        background-image: linear-gradient(to right, var(--cor5), white);
+        color: white;
+        padding: 10px;
+    }
+    picture img{
+        max-width: 100%;
+    }
+    article p{
+        padding: 20px;
+        line-height: 1.5em;
+        text-align: justify;
+        text-indent: 30px;
+    }
+    .video{
+        background-color: var(--cor5);
+        padding: 20px;
+        margin: 0 -20px;
+    }
+    .video iframe{
+        display: block;
+        margin: auto;
+    }
+    aside > h2{
+        background-color: var(--cor4);
+        border-radius: 20px 20px 0 0;
+        color: var(--cor1);
+        padding: 10px 20px 10px 20px;
+    }
+    aside ul{
+        background-color: var(--cor2);
+        border-radius: 0 0 20px 20px;
+        color: white;
+        padding: 40px;
+        margin: -20px auto 20px auto;
+        line-height: 1.5em;
+    }
+    aside#extra > p{
+        background-color: white;
+        color: black;
+    }
+    footer{
+        background-color: var(--cor5);
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+    footer a{
+        color: white;
+        text-decoration: underline;
+    }
+    footer a:hover{
+        text-decoration: underline;
+    }

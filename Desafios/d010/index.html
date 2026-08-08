@@ -9,10 +9,22 @@
         body{
             background-color: #84E1AD;
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        iframe{
+            max-width: 100%;
         }
         a{
             color: #0d1e15;
             font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
         }
         a::after{
             content:"\1F517"
@@ -38,46 +50,45 @@
             font-weight: bold;
             padding: 10px;
         }
-        nav>a{
+        nav a{
             color: white;
         }
-        nav>a::after{
+        nav a::after{
             content:""
         }
-        nav>a:hover{
+        nav a:hover{
             color: #84E1AD;
         }
         main{
             background-color: white;
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
             margin: auto;
-            width: 50%;
-            text-align: center;
+            max-width: 1000px;
+            padding: 20px;
         }
         article{
             margin: auto;
         }
-        article>h1{
+        article h1{
             color: #436151;
-            text-align: justify;
-            display: block;
-            margin: auto;
+            margin: 0 0 20px 0;
             padding: 20px;
         }
-        article>h2{
-            background-image: linear-gradient(to right, #CCEDDB, #FBFEFD);
+        article h2{
+            background-image: linear-gradient(to right, #CCEDDB, transparent);
             text-align: justify;
             color: #387554;
             margin: auto;
-            padding: 5px 5px 5px 20px;
+            padding: 5px 10px;
         }
-        article>p{
+        article p{
             text-align: justify;
-            margin: auto;
-            padding: 10px;
+            margin: 15px 0;
+            line-height: 1.5em;
         }
         article#video{
             background-color: #1A5C38;
+            padding: 20px;
         }
         article#extra{
             background-color: #C5EBD6;
@@ -89,14 +100,16 @@
             border-radius: 20px 20px 0px 0px;
         }
         article#extra>ul{
-            height: 50%;
+
         }
         footer{
             background-color: #1A5C38;
             color: white;
             text-align: center;
         }
-        
+        footer a{
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -173,7 +186,7 @@
             <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
             <p>Acesse aqui o site <a href="@">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
         </article>
-        <article id="/extra">
+        <article id="lextra">
             <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
         </article>
     </main>
